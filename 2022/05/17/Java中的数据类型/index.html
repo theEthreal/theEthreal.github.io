@@ -16,21 +16,22 @@
   <meta name="author" content="Du Yuan">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="Java是一种强类型语言——安全性更高 要求变量的使用严格符合规定，所有的变量都必须先定义后才能使用  java中的数据类型[[Java中的标识符和关键字]]  除了基本数据类型，其他的都是引用数据类型  基本类型 数值类型  整数型   拓展：java中不同进制整数的表示 二进制：0b开头 八进制：0开头 十六进制：0x开头   byte 1个字节  short 2个字节  int 4个字节">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2022/05/20/hello-world/index.html">
+<meta property="og:title" content="java中的数据类型">
+<meta property="og:url" content="http://example.com/2022/05/17/Java%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Java是一种强类型语言——安全性更高 要求变量的使用严格符合规定，所有的变量都必须先定义后才能使用  java中的数据类型[[Java中的标识符和关键字]]  除了基本数据类型，其他的都是引用数据类型  基本类型 数值类型  整数型   拓展：java中不同进制整数的表示 二进制：0b开头 八进制：0开头 十六进制：0x开头   byte 1个字节  short 2个字节  int 4个字节">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-20T03:19:38.015Z">
-<meta property="article:modified_time" content="2022-05-20T03:19:38.016Z">
+<meta property="article:published_time" content="2022-05-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-20T07:17:15.207Z">
 <meta property="article:author" content="Du Yuan">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello World - Hexo</title>
+  <title>java中的数据类型 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="java中的数据类型"></span>
           
         </div>
 
@@ -213,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-05-20 11:19" pubdate>
-          2022年5月20日 上午
+        <time datetime="2022-05-17 00:00" pubdate>
+          2022年5月17日 凌晨
         </time>
       </span>
     
@@ -225,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          866 字
         
       </span>
     
@@ -236,7 +237,7 @@
         
         
         
-          4 分钟
+          8 分钟
         
       </span>
     
@@ -274,23 +275,87 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">java中的数据类型</h1>
             
             <div class="markdown-body">
               
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+              <p><strong>Java是一种强类型语言</strong>——安全性更高</p>
+<p>要求变量的使用严格符合规定，所有的变量都必须先定义后才能使用</p>
+<hr>
+<h1 id="java中的数据类型"><a href="#java中的数据类型" class="headerlink" title="java中的数据类型"></a>java中的数据类型</h1><p>[[Java中的标识符和关键字]]</p>
+<blockquote>
+<p>除了基本数据类型，其他的都是引用数据类型</p>
+</blockquote>
+<h2 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h2><ul>
+<li><p>数值类型</p>
+<ul>
+<li>整数型</li>
+</ul>
+<blockquote>
+<p>拓展：java中不同进制整数的表示</p>
+<p>二进制：0b开头</p>
+<p>八进制：0开头</p>
+<p>十六进制：0x开头</p>
+</blockquote>
+<ol>
+<li><p>byte 1个字节</p>
+</li>
+<li><p>short 2个字节</p>
+</li>
+<li><p>int 4个字节</p>
+</li>
+<li><p>long 8个字节</p>
+<blockquote>
+<p>一般用到long的时候会在数字后面加一个L以作标识</p>
+<p><code>long num=100L</code></p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>浮点型</li>
+</ul>
+<p><em><strong>尽量避免用浮点型数据进行比较，大数使用BigDecimal类进行操作</strong></em></p>
+<blockquote>
+<p>BigDecimal类是一个数学工具类</p>
+<p>float与double类型的浮点数是有限、离散的，具有舍入误差，它只能表示一个接近但不等于的约数；</p>
+<p>example：银行业务，大额的钱怎么表示，不能用float或者double，应该使用BigDecimal类</p>
+<hr>
+<p>float f&#x3D;0.1；</p>
+<p>double d&#x3D;1.0&#x2F;10;</p>
+<p>System.out.printf(f &#x3D;&#x3D; d)会判断为f不等于d</p>
+<hr>
+<p>float f1&#x3D;23259562999999</p>
+<p>float f2&#x3D;f1+1</p>
+<p>System.out.printf(f1 &#x3D;&#x3D; f2)会判定为真，即f1&#x3D;f2</p>
+</blockquote>
+<ol>
+<li>float 4个字节</li>
+<li>double 8个字节</li>
+</ol>
+<ul>
+<li>字符型char 2个字节</li>
+</ul>
+<blockquote>
+<p><em><strong>字符本质上仍然是数字</strong></em></p>
+<p>字符的编码来自于Unicode表，Unicode表  0—65536</p>
+<p>转码表示范围：U0000—UFFFF</p>
+<p>char c&#x3D;’\u0061’实际上c&#x3D;’a’</p>
+</blockquote>
+</li>
+<li><p>boolean类型——true和false 占<strong>1位</strong></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>位(bit)<strong>与</strong>字节(byte)<strong>的关系：</strong>bit</strong>是计算机中内部数据存储的最小单元，example：11001100是一个八位二进制数；</p>
+<p><strong>byte</strong>一般用<em><strong>B</strong></em>来表示，是计算机中进行数据处理的基本单位，<strong>1B&#x3D;8bit</strong></p>
+<p>可以理解为<strong>bit</strong>是一个存储单元，而<strong>byte</strong>是一行8个存储单元</p>
+<p><strong>字符</strong>：计算机使用的字母、数字、字、符号</p>
+</blockquote>
+<h2 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h2><ul>
+<li>类</li>
+<li>接口</li>
+<li>数组</li>
+</ul>
 
               
             </div>
@@ -298,6 +363,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/java/" class="category-chain-item">java</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/java/">#java</a>
+      
+    </div>
   
 </div>
 
@@ -307,8 +400,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2022/05/20/hello-world/</div>
+      <div>java中的数据类型</div>
+      <div>http://example.com/2022/05/17/Java中的数据类型/</div>
     </div>
     <div class="license-meta">
       
@@ -320,7 +413,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年5月20日</div>
+          <div>2022年5月17日</div>
         </div>
       
       
@@ -350,9 +443,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/05/20/%E5%B8%B8%E7%94%A8DOS%E5%91%BD%E4%BB%A4/" title="常用DOS命令">
+                      <a href="/2022/05/18/Scanner%E4%B8%8E%E7%94%A8%E6%88%B7%E4%BA%A4%E4%BA%92/" title="Scanner与用户进行交互">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">常用DOS命令</span>
+                        <span class="hidden-mobile">Scanner与用户进行交互</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -360,8 +453,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/05/18/Scanner%E4%B8%8E%E7%94%A8%E6%88%B7%E4%BA%A4%E4%BA%92/" title="Scanner与用户进行交互">
-                        <span class="hidden-mobile">Scanner与用户进行交互</span>
+                      <a href="/2022/05/17/Java%E4%B8%AD%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6/" title="java中的运算符">
+                        <span class="hidden-mobile">java中的运算符</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -192,6 +192,31 @@
   
   
   <entry>
+    <title>java程序运行机制</title>
+    <link href="/2022/05/14/Java%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/"/>
+    <url>/2022/05/14/Java%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Java的程序运行机制"><a href="#Java的程序运行机制" class="headerlink" title="Java的程序运行机制"></a>Java的程序运行机制</h1><p><em><strong>Java既是编译型也是解释型</strong></em></p><p><strong>Java程序运行流程</strong></p><p><strong>java源文件—&gt;java编译器—&gt;编译—&gt;class字节码文件—&gt;<br>JRE-java虚拟机(类加载器–&gt;字节码校验器–&gt;解释器)—&gt;操作系统进行指令操作</strong></p><ol><li><p>编译型</p><p>效率高，反应速度快</p><p>example：操作系统</p></li><li><p>解释型</p><p>对速度要求不高</p><p>example：网页</p></li></ol><p>举个例子</p><p>一个外国人想要看一本中文书，他可以直接购买一本全本都翻译成英文的——编译型</p><p>他也可以请一位翻译人员逐字逐句的给他翻译过来看——解释型</p><p>但是一但原来中文的原本有改动，译本就要重新翻译，而后者就可以灵活改动</p><blockquote><p>随着硬件的发展，解释型和编译型的效率越来越接近</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>java中的三种注释</title>
     <link href="/2022/05/14/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A/"/>
     <url>/2022/05/14/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A/</url>
@@ -222,31 +247,6 @@
     <url>/2022/05/14/Java%E7%AE%80%E8%BF%B0/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="C-and-C"><a href="#C-and-C" class="headerlink" title="C and C++"></a>C and C++</h1><ul><li>1982年C++诞生</li><li>面向对象</li><li>图形、游戏领域</li></ul><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><ul><li><del>Java 2标准版（J2SE）：桌面端</del></li><li><del>java 2移动版（J2ME）：手机端</del></li><li>Java 2企业版（J2EE）：服务器端</li></ul><blockquote><p>三高问题：高性能，高可用，高并发</p></blockquote><h2 id="基于Java开发的系统、平台、工具"><a href="#基于Java开发的系统、平台、工具" class="headerlink" title="基于Java开发的系统、平台、工具"></a>基于Java开发的系统、平台、工具</h2><ul><li>构建工具：Ant、Maven、Jekins</li><li>应用服务器：Tomcat、Jetty、Jboss、Websphere、weblogic</li><li>Web开发：Struts、Spring、myBatis</li><li>开发工具：Eclipse、Idea、Netbean、Intellij</li><li>2006年基于java分布式管理出现了Hadoop-大数据领域</li><li>2008年Android的发展和流行</li></ul><h1 id="Java的特性和优势"><a href="#Java的特性和优势" class="headerlink" title="Java的特性和优势"></a>Java的特性和优势</h1><ul><li>简单性</li><li>面向对象</li><li>可移植性</li><li>高性能</li><li>分布式</li><li>动态性——反射机制</li><li>多线程</li><li>安全性</li><li>健壮性</li></ul><h1 id="Java成功的原因"><a href="#Java成功的原因" class="headerlink" title="Java成功的原因"></a>Java成功的原因</h1><p>顺应时代的发展，贴合了互联网时代来临的需求，自身足够优秀</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>java程序运行机制</title>
-    <link href="/2022/05/14/Java%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/"/>
-    <url>/2022/05/14/Java%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Java的程序运行机制"><a href="#Java的程序运行机制" class="headerlink" title="Java的程序运行机制"></a>Java的程序运行机制</h1><p><em><strong>Java既是编译型也是解释型</strong></em></p><p><strong>Java程序运行流程</strong></p><p><strong>java源文件—&gt;java编译器—&gt;编译—&gt;class字节码文件—&gt;<br>JRE-java虚拟机(类加载器–&gt;字节码校验器–&gt;解释器)—&gt;操作系统进行指令操作</strong></p><ol><li><p>编译型</p><p>效率高，反应速度快</p><p>example：操作系统</p></li><li><p>解释型</p><p>对速度要求不高</p><p>example：网页</p></li></ol><p>举个例子</p><p>一个外国人想要看一本中文书，他可以直接购买一本全本都翻译成英文的——编译型</p><p>他也可以请一位翻译人员逐字逐句的给他翻译过来看——解释型</p><p>但是一但原来中文的原本有改动，译本就要重新翻译，而后者就可以灵活改动</p><blockquote><p>随着硬件的发展，解释型和编译型的效率越来越接近</p></blockquote>]]></content>
     
     
     <categories>

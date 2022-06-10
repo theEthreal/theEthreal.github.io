@@ -1,0 +1,891 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="duyuan">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="** 第一章 css基础**css是动态html技术，他扩充了HTML标记的属性设置，使得页面显示效果更加丰富。 css对页面元素、布局等能够更加精确控制，同时能够实现内容和表现的分离，使得网站的设计风格趋向统一、维护更加容易 在HTML中写样式会让网页过“胖”，后期难维护 css专注于样式“美化” html专注“内容结构” 有利于表现、内容相分离后期易维护 css的组成：选择器+声明 css 的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css基础">
+<meta property="og:url" content="http://example.com/2022/04/09/css%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="** 第一章 css基础**css是动态html技术，他扩充了HTML标记的属性设置，使得页面显示效果更加丰富。 css对页面元素、布局等能够更加精确控制，同时能够实现内容和表现的分离，使得网站的设计风格趋向统一、维护更加容易 在HTML中写样式会让网页过“胖”，后期难维护 css专注于样式“美化” html专注“内容结构” 有利于表现、内容相分离后期易维护 css的组成：选择器+声明 css 的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://picx.zhimg.com/80/v2-cf98c60c6364cbb6369d554630e11833_720w.jpg?source=1940ef5c">
+<meta property="og:image" content="d:/Blog/source_posts/post_img/web01.jpg">
+<meta property="og:image" content="https://pica.zhimg.com/80/v2-7154fc2b3fb024b92868211fbf752cdd_720w.jpg?source=1940ef5c">
+<meta property="og:image" content="https://pica.zhimg.com/80/v2-80bf24ccb7ed8f65e46b93140cff04f8_720w.jpg?source=1940ef5c">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-0fe4bcef63c2a85704fb5aaea74c44ab_720w.jpg?source=1940ef5c">
+<meta property="og:image" content="d:/Blog/source_posts/post_img/web05.jpg">
+<meta property="og:image" content="d:/Blog/source_posts/post_img/web06.jpg">
+<meta property="article:published_time" content="2022-04-08T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-10T17:19:32.118Z">
+<meta property="article:author" content="Du Yuan">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://picx.zhimg.com/80/v2-cf98c60c6364cbb6369d554630e11833_720w.jpg?source=1940ef5c">
+  
+  
+  
+  <title>css基础 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/diy/colorjianbian.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.0","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>DuYuan的博客</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="css基础"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        duyuan
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-04-09 00:00" pubdate>
+          2022年4月9日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          11k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          90 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">css基础</h1>
+            
+            <div class="markdown-body">
+              
+              <h2 id="第一章-css基础"><a href="#第一章-css基础" class="headerlink" title="** 第一章 css基础**"></a>** 第一章 css基础**</h2><p>css是动态html技术，他扩充了HTML标记的属性设置，使得页面显示效果更加丰富。</p>
+<p>css对页面元素、布局等能够更加精确控制，同时能够实现内容和表现的分离，使得网站的设计风格趋向统一、维护更加容易</p>
+<p>在HTML中写样式会让网页过“胖”，后期难维护</p>
+<p>css专注于样式“美化” html专注“内容结构” 有利于表现、内容相分离后期易维护</p>
+<p><strong>css的组成：选择器+声明</strong></p>
+<p>css 的优点：</p>
+<ol>
+<li>内容表现相分离</li>
+<li>增强网页的表现力</li>
+<li>风格统一</li>
+<li>多次引用</li>
+</ol>
+<h3 id="css的概念"><a href="#css的概念" class="headerlink" title="css的概念"></a><strong>css的概念</strong></h3><p>css层叠样式表（也称级联样式表），是用来进行网页风格设计。它是一种能让表现和内容相分离的样式语言，用于控制页面的表现（外观和内容排版）。他对HTML来说是一种有效补，利用CSS，可以创建各种规则，应用到所有的HTML元素。</p>
+<p>css规则：选择器+声明（CSS是包含一个或多个规则的文本文件）</p>
+<p>css优势：</p>
+<ol>
+<li>表现和内容相分离</li>
+<li>增强了网页的表现力</li>
+<li>设计风格趋于统一</li>
+<li>一个页面多次使用</li>
+</ol>
+<h3 id="代码风格"><a href="#代码风格" class="headerlink" title="代码风格"></a><strong>代码风格</strong></h3><ol>
+<li><p>样式格式书写：</p>
+</li>
+<li><ol>
+<li>紧凑格式</li>
+<li>展开格式（更直观），代码压缩</li>
+</ol>
+</li>
+<li><p>空格规范：<br>\1. 属性值前面，冒号后面，保留一个空格<br>\2. 选择器和大括号中间保留空格</p>
+</li>
+</ol>
+<h3 id="选择器的作用"><a href="#选择器的作用" class="headerlink" title="选择器的作用"></a><strong>选择器的作用</strong></h3><p>选择器就是根据不同的需求把不同标签选出来</p>
+<p><strong>选择器分为基础选择器和联合选择器</strong></p>
+<p><strong>基础选择器</strong></p>
+<ol>
+<li>标记选择器</li>
+<li>类选择器 重用性<br>\1. 多类名使用方式 个人理解就是id选择器，但是id选择器只能调用一次，而class选择器的多类名使用可以调用多次</li>
+<li>id选择器 id主要与js一起用</li>
+<li>通配符选择器 *通配符 在数据库查询中可以选取所有结果，在css中可以选取所有元素（标签），对页面整体设置统一风格</li>
+<li>伪类选择器 链接访问后变色 a:hover（鼠标悬停时）必须设置于a:link（访问前） a:visited（访问后)之后，a:active（点击与释放）必须设置a:hover之后</li>
+</ol>
+<p><strong>联合选择器</strong></p>
+<p>两种或以上的选择器直接连接，联合使用，好处是当不同的标签有相同的样式时，可以调用同一个类选择器即设定特定类中的特定标记，解放程序员，方便我们偷懒，联合选择器可以更准确、更高效的选择目标元素（标记）</p>
+<p><strong>后代选择器（包含选择器）：</strong>某个标签里面的所有元素，包括儿子、孙子。。。 格式： 父 子 孙 { 样式声明} 改变子和孙同类标签的样式</p>
+<p><strong>子选择器：</strong>只要某个标记里面的子元素 格式： 父&gt;子 { 样式声明} 只选择最近一级子元素，改变子样式</p>
+<p><strong>集体声明（并集选择器&#x2F;群组选择器）：</strong>用，把他们分开 元素1，元素2{样式声明}</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">p</span>,</span><br><span class="language-css">        <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span>,</span><br><span class="language-css">        <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">a</span> &#123;</span><br><span class="language-css">            <span class="hljs-attribute">color</span>: blanchedalmond;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>www<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>uuu<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>uuu<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>ttt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>qqq<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<p>并集选择器竖着写</p>
+<p>最后一个选择器不用加逗号</p>
+<p><strong>伪类选择器：</strong>伪类选择器 前有“ ： ” 链接伪类、结构伪类</p>
+<p>链接伪类：</p>
+<ol>
+<li>a:link</li>
+<li>a:visited</li>
+<li>a:hover</li>
+<li>a:active</li>
+</ol>
+<p>注意：</p>
+<ol>
+<li>要按照lvha的顺序</li>
+<li>但单独给a链接设置样式</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">body</span>&#123;</span><br><span class="language-css">            <span class="hljs-attribute">color</span>: blanchedalmond;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">        <span class="hljs-selector-tag">a</span>&#123;</span><br><span class="language-css">            <span class="hljs-attribute">text-decoration</span>: none;</span><br><span class="language-css">            <span class="hljs-attribute">color</span>: blanchedalmond;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>yyy<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>www<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> &gt;</span>ttt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>：focus 伪类选择器</strong>用于选取获得焦点的表单元素</p>
+<p><strong>css选择器声明</strong></p>
+<p><strong>集体声明、全局声明、派生选择器</strong></p>
+<p><strong>全局声明就是使用通配符选择器</strong></p>
+<p><strong>派生选择器（上下文选择器）：</strong>根据标记所在位置的<strong>上下文来定义样式</strong>，可以使标记<strong>更简洁</strong>。 派生选择器允许根据文档的上下文关系来确定某个标记的样式。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">strong</span> &#123;</span><br><span class="language-css">            <span class="hljs-attribute">font-weight</span>: normal;</span><br><span class="language-css">            <span class="hljs-attribute">font-style</span>: italic; </span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>so nice,bro<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>niyaoya~<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="选择器使用"><a href="#选择器使用" class="headerlink" title="选择器使用"></a><strong>选择器使用</strong></h3><p>标记选择器（元素选择器）是指用HTML标签名作为选择器，按标签名分类，为页面中某一类所有标签指定统一的CSS样式（即将同一类的标签选择出来，设置统一的样式，但是不能差异化样式同一类型的标签，他们的样式一定相同，但这样的不能满足我们的需求，于是可以使用类选择器，对单独的某一个标签设置类选择器，这样就可以让他的样式区别于其他同类标签，由于css中有时候出现一些相同的属性，为了解放程序员，就会将相同的属性放在另一个class选择器里面，这样就可以通过class选择器，对标签设置相同的属性辽~，这就是多类名的使用，id选择器具有唯一标识，就像数据库中的主码，java中的主类，只能有一个，不能重复。</p>
+<h3 id="css定义与引用"><a href="#css定义与引用" class="headerlink" title="css定义与引用"></a><strong>css定义与引用</strong></h3><p><strong>CSS规则定义位置可以分为四种</strong>：</p>
+<ol>
+<li><strong>内联样式表（行内样式表）</strong>：不包含选择器，在标签内设置style属性</li>
+<li><strong>内部样式表</strong>：在head标签中<style>…</style></li>
+<li><strong>外部样式表</strong>:@import url( “外部样式文件名称”);</li>
+<li><strong>链接外部样式表</strong> <link rel="stylesheet" type="text/css" href="路径"></li>
+</ol>
+<h3 id="css继承与层叠"><a href="#css继承与层叠" class="headerlink" title="css继承与层叠"></a><strong>css继承与层叠</strong></h3><p>css的三大特性：继承、层叠、优先级</p>
+<p>css继承：<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E5%AD%90%E6%A0%87%E7%AD%BE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:2300568512%7D">子标签</a>会继承父标记的所有样式风格，并且可以在父标记样式风格的基础上再加以修改，产生新的样式，而<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E5%AD%90%E6%A0%87%E8%AE%B0&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:2300568512%7D">子标记</a>的样式风格完全不影响父标记，对于继承，我们可以联想java中的继承，当子类继承父类时，可以重写父类的方法，也可以新加方法，但是重写的方法不会影响父类的方法。（可以继承text-\font-\line-这些元素开头的，以及color属性）</p>
+<p><strong>行高继承</strong>：行高可跟单位也可不跟单位</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">body</span>&#123;</span><br><span class="language-css">            <span class="hljs-attribute">color</span>: antiquewhite</span><br><span class="language-css">            font：<span class="hljs-number">12px</span>/<span class="hljs-number">1.5</span> <span class="hljs-string">&#x27;宋体&#x27;</span>;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">        <span class="hljs-selector-tag">div</span>&#123;</span><br><span class="language-css">            <span class="hljs-attribute">font-size</span>:<span class="hljs-number">14px</span>;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br>    <br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>座右铭<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>靡不有初，鲜克有终<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>层叠：解决样式冲突，后来者居上原则，显示优先级高的， 后加 !import 改变优先级</p>
+<p>层叠性理解成“冲突”的解决方案，即对同一内容设置了多个不同样式产生冲突时的处理</p>
+<p><strong>优先级：行内样式&gt;id样式&gt;class样式&gt;标记样式</strong> 权重：标记1 class10 id100 行内1000</p>
+<h2 id="第二章-div和span"><a href="#第二章-div和span" class="headerlink" title="第二章 div和span"></a><strong>第二章 div和span</strong></h2><div></div>是大盒子，独占一行，意为分区、分节的意思
+
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a><strong>定位</strong></h3><p><strong>div 的css中有：</strong></p>
+<p><strong>1.position属性（定位模式），当值为：</strong></p>
+<ol>
+<li><strong>relative时，可以用top、left来设置div在页面中的偏移，不可以使用层叠</strong> （相对定位：是元素在移动位置的时候，相对于他原来的位置来说的）</li>
+<li><strong>absolute时，可以用top、left 对div进行绝对定位</strong></li>
+<li><strong>fixed时，固定</strong></li>
+<li><strong>static，静态</strong></li>
+</ol>
+<p><strong>2.float属性</strong>：浮动，向左或向右</p>
+<p><strong>3.clear属性：</strong>清除图层内浮动，与浮动属性是一对作用相反的属性</p>
+<p><strong>4.z-index属性：</strong>图层上下层关系，实现多个图层层叠效果，z-index值越大，图层位置越高，子层位于父层之上</p>
+<p><strong>应用</strong></p>
+<h3 id="定位的组成："><a href="#定位的组成：" class="headerlink" title="定位的组成："></a><strong>定位的组成：</strong></h3><p><strong>定位：</strong>将盒子定在某一位置，所以定位也是在摆放盒子，按照定位的方式移动盒子。</p>
+<p><strong>定位&#x3D;定位模式+边偏移</strong></p>
+<p>边偏移就是定位的盒子移动到最终位置，属性：top bottom left right （浮动没有这些属性）</p>
+<p><strong>定位模式用于指定一个元素在文档中的定位方式。边偏移则决定了该元素的最终位置</strong></p>
+<p><span></span>小盒子，可以多个小盒子并排</p>
+<p>div是块级元素，能简化页面布局， 是页面代码更具可读性</p>
+<p>所有元素都可以看成是一个盒子</p>
+<h2 id="第三章-css样式属性"><a href="#第三章-css样式属性" class="headerlink" title="第三章 css样式属性"></a><strong>第三章 css样式属性</strong></h2><h3 id="css属性值中的单位："><a href="#css属性值中的单位：" class="headerlink" title="css属性值中的单位："></a><strong>css属性值中的单位：</strong></h3><p><strong>单位的取舍在很大程度上取决于用户的显示器和浏览器，不恰当的使用单位会给页面布局带来很多麻烦。</strong></p>
+<p>绝对单位：英寸、厘米、毫米、磅和pica(皮卡) 1pc&#x3D;12pt(12点活字)设置字体大小 1pt&#x3D;1&#x2F;72in 1in&#x3D;2.54cm</p>
+<p>相对单位：em表示字体的高度,针对当前元素 rem表示字体针对根元素而言，默认是 16px</p>
+<p>ex表示所使用的的字体中小写字母x的高度作为参考，一般通过em&#x2F;2得到</p>
+<p>px:像素，一般来说，设的值越大，清晰度越高</p>
+<p>百分比：通过另一个自来计算，一般参照父元素</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><br>        body&#123;<br>            color: antiquewhite<br>            font：12px/1.5 &#x27;宋体&#x27;;<br>        &#125;<br>        div&#123;<br>            font-size:14px;   //行高14*1.5=21px<br>        &#125;<br>    <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br>    <br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>座右铭<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>靡不有初，鲜克有终<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="css字体样式"><a href="#css字体样式" class="headerlink" title="css字体样式"></a><strong>css字体样式</strong></h3><p>最开始是使用HTML标签里的<font>标签来设置字体的样式，但是这样会导致网页过胖，维护困难，随着css的出现，渐渐地就把font当成属性样式放在css里，使得内容与表现相分离，但是css中的字体样式毕竟较少，而且如果用户没有安装该字体，则无法正常显现该字体，于是在css3中添加了@font-face，并通过这一方式，只要浏览器给出该字体的路径便可以显示字体的风格，不用客户安装该字体</p>
+<p>font-size：字体大小</p>
+<p>font-style：normal，只要是消除默认样式 italic:斜体显示文字 oblique：倾斜字体显示</p>
+<p>区别：所有字体都有italic这一属性也就是说没有italic这一属性的字体无法呈现斜体风格，只能用oblique来显示斜体</p>
+<p>font-family:字体一、字体二、。。。如果用户端的网页没有下载字体一，就会看看有没有下载字体二，依次往下，都没有默认宋体</p>
+<p>font-variant：字体变形，主要用于设置英文字体，实际上是设置文本字体是否为小型的大写字母</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">p</span>&#123;</span><br><span class="language-css">            <span class="hljs-attribute">font-variant</span>: small-caps;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br>    <br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>WRERWEwewhe wihvi<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<p><img src="https://picx.zhimg.com/80/v2-cf98c60c6364cbb6369d554630e11833_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>font-weight：字体粗细 可替代html中的<strong></strong> <b></b> normal,bold.bolder,lighter,100~900越小越细，越大越粗</p>
+<h3 id="css文本样式"><a href="#css文本样式" class="headerlink" title="css文本样式"></a><strong>css文本样式</strong></h3><p>字符间距letter-spacing：normal 长度单位 （字符和字符的间距） word-spacing：针对英文，<strong>如果里面有中文，不能呈现字符和字符的间距</strong> letter-spacing：中英文都可，可以呈现字符的间距</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">p</span>&#123;</span><br><span class="language-css">           <span class="hljs-attribute">word-spacing</span>: <span class="hljs-number">11em</span>;</span><br><span class="language-css">           <span class="hljs-comment">/* letter-spacing: 11em; */</span></span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br>    <br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>usfugaeru猪猪侠我的天哪<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>运行结果：usfugaeru猪猪侠我的天哪</p>
+<p>还有一种带有空格代码结果：usfugaeru 猪猪侠我的天哪</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">p</span>&#123;</span><br><span class="language-css">           <span class="hljs-attribute">word-spacing</span>: <span class="hljs-number">11em</span>;</span><br><span class="language-css">           <span class="hljs-comment">/* letter-spacing: 11em; */</span></span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br>    <br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>usfugaeru 猪猪侠我的天哪<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>运行结果：usfugaeru 猪猪侠我的天哪（空格间距11em）</p>
+<p>行距line-height:百分比基于字体高度，可以为负值</p>
+<p>首行缩进：text-indent 是字体的两倍 缩进5个空格<blockquote></blockquote></p>
+<p>字符装饰text-decoration：none（取消默认样式） underline：下划线 代替html中的<u></u> <ins></ins> line-through：删除线 代替html中的<del></del></p>
+<p>英文大小写转换 text-transform : capitalize 将每个单词的第一个字母变成大写 uppercase：转大写</p>
+<h2 id="第四章-Div-css页面布局"><a href="#第四章-Div-css页面布局" class="headerlink" title="第四章 Div+css页面布局"></a><strong>第四章 Div+css页面布局</strong></h2><p>display：none和visibility：hidden 的区别：前者是不占据物理空间，后者占据物理空间</p>
+<p>display：block和visibility：visible 将隐藏的对象显示</p>
+<p>导航栏和菜单：用ul 和a 来实现</p>
+<p>二级菜单可用列表嵌套</p>
+<h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a><strong>盒子模型</strong></h3><p>盒子模型：内容（content)：内容区是CSS盒子模型的中心，它呈现了盒子的主要信息内容，是盒子模型的必备组成部分，其他三个都是可选的</p>
+<p>内边距（padding）</p>
+<p>外边距(margin）：指的是两个盒子之间的距离，他可能是子元素与父元素之间的距离，也可能兄弟元素之间的距离。</p>
+<p>边框（border）</p>
+<p>所有元素都可以看成是一个盒子！</p>
+<h2 id="CSS盒子模型"><a href="#CSS盒子模型" class="headerlink" title="CSS盒子模型"></a><strong>CSS盒子模型</strong></h2><h3 id="标准盒模型（content-box"><a href="#标准盒模型（content-box" class="headerlink" title="标准盒模型（content-box)"></a><strong>标准盒模型（content-box)</strong></h3><p>不包括padding和border，</p>
+<p><strong>盒子在网页中实际占用：</strong></p>
+<p>宽：width+2×padding+2×border+2×margin</p>
+<p>高：height+2×padding+2×border+2×margin</p>
+<p><strong>盒模型实际大小：</strong></p>
+<p><img src="D:\Blog\source_posts\post_img\web01.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>宽：width+2×padding+2×border</p>
+<p>高：height+2×padding+2×border</p>
+<h3 id="IE盒模型-border-box"><a href="#IE盒模型-border-box" class="headerlink" title="IE盒模型(border-box)"></a><strong>IE盒模型(border-box)</strong></h3><p><img src="https://pica.zhimg.com/80/v2-7154fc2b3fb024b92868211fbf752cdd_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>包括padding和border，不同的浏览器对盒子解析不同，为了规范化，我们需要在文档的头部加上DOCTYPE声明，然后浏览器都可以显示“标准W3C盒模型”</p>
+<p>宽：width</p>
+<p>高：height</p>
+<p><strong>盒子模型的计算方法：</strong></p>
+<p><img src="https://pica.zhimg.com/80/v2-80bf24ccb7ed8f65e46b93140cff04f8_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="https://pic3.zhimg.com/80/v2-0fe4bcef63c2a85704fb5aaea74c44ab_720w.jpg?source=1940ef5c" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="盒子在标准流中的定位原则："><a href="#盒子在标准流中的定位原则：" class="headerlink" title="盒子在标准流中的定位原则："></a><strong>盒子在<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E6%A0%87%E5%87%86%E6%B5%81&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:2300568512%7D">标准流</a>中的定位原则：</strong></h3><h3 id="行元素之间的水平margin"><a href="#行元素之间的水平margin" class="headerlink" title="行元素之间的水平margin"></a><strong>行元素之间的水平margin</strong></h3><p>两个<strong>相邻行元素</strong>之间，<strong>他们的间距&#x3D;第一个行元素的margin-right加上第二个行元素的margin-left</strong></p>
+<h3 id="块元素之间的竖直margin"><a href="#块元素之间的竖直margin" class="headerlink" title="块元素之间的竖直margin"></a><strong>块元素之间的竖直margin</strong></h3><p>由于块元素是上下排列的，所以块元素计算的是两个相邻块的垂直距离。在块元素之间存在一种特殊的现象，称之为“塌陷”，因此，两个相邻块之间的垂直距离只取margin-bottom与margin-top中较大的那个数值。</p>
+<h3 id="嵌套盒子间的margin"><a href="#嵌套盒子间的margin" class="headerlink" title="嵌套盒子间的margin"></a><strong>嵌套盒子间的margin</strong></h3><p>嵌套盒子与父盒子对应<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E8%BE%B9%E8%B7%9D%E7%A6%BB&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:2300568512%7D">边距离</a>&#x3D;父盒子的padding+子盒子的margin值</p>
+<h2 id="border属性："><a href="#border属性：" class="headerlink" title="border属性："></a><strong>border属性：</strong></h2><p><strong>区分 border：0和border：none；</strong></p>
+<p><strong>主要体现在性能差异和兼容差异：</strong></p>
+<p><strong>1.性能差异：</strong></p>
+<p>border:0 表示把border定义为0px。虽然0px在页面上看不见，但是浏览器依然会对border进行渲染，渲染之后，实际上是一个像素为“0”的border。</p>
+<p>也就是说border：0 需要占内存。</p>
+<p>border：none 表示把border定义为none，浏览器解析border：none时，不会做出渲染，即不用占内存。</p>
+<p><strong>2.兼容差异：</strong></p>
+<p>兼容性差异只存在于IE6和IE7的<input type="button">标签以及<button>标签中，其他浏览器不存在兼容问题</p>
+<p>border：0 在所有浏览器中的效果都一样，都是把隐藏框隐藏（不是去掉）</p>
+<p>border：none 对IE6和IE7按钮的边框无效，在其他浏览器则会去掉按钮的边框</p>
+<h2 id="padding"><a href="#padding" class="headerlink" title="padding"></a><strong>padding</strong></h2><p>内边距padding，又常常称为“补白”，他指的是内容区到边框之间的那一部分，关于背景图片的使用有时会涉及padding的一个小技巧。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">div</span>&#123;</span><br><span class="language-css">            <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">../img/DatePicker_arrow_next.png</span>);</span><br><span class="language-css">            <span class="hljs-attribute">background-repeat</span>: no-repeat;</span><br><span class="language-css">            </span><br><span class="language-css">            <span class="hljs-attribute">width</span>: <span class="hljs-number">127px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">30px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">color</span>: red;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>商会状况<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="D:\Blog\source_posts\post_img\web05.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>当一个元素使用背景图的时候，该元素的文字内容会停留在左边，如果想要达到预期效果，可以使用padding来实现：</p>
+<p>运行结果：</p>
+<p><img src="D:\Blog\source_posts\post_img\web06.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">div</span>&#123;</span><br><span class="language-css">            <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">../img/DatePicker_arrow_next.png</span>);</span><br><span class="language-css">            <span class="hljs-attribute">background-repeat</span>: no-repeat;</span><br><span class="language-css">            <span class="hljs-attribute">width</span>: <span class="hljs-number">127px</span>;   <span class="hljs-comment">/*127-55=72*/</span></span><br><span class="language-css">            <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">55px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">20px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">color</span>: red;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>商会状况<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+            </div>
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/web%E5%89%8D%E7%AB%AF/" class="category-chain-item">web前端</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>css基础</div>
+      <div>http://example.com/2022/04/09/css基础/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>duyuan</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年4月9日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/05/14/Java%E7%AE%80%E8%BF%B0/" title="java简述">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">java简述</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/03/04/web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" title="web前端">
+                        <span class="hidden-mobile">web前端</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.0/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script>
+  (function() {
+    var enableLang = CONFIG.code_language.enable && CONFIG.code_language.default;
+    var enableCopy = CONFIG.copy_btn;
+    if (!enableLang && !enableCopy) {
+      return;
+    }
+
+    function getBgClass(ele) {
+      return Fluid.utils.getBackgroundLightness(ele) >= 0 ? 'code-widget-light' : 'code-widget-dark';
+    }
+
+    var copyTmpl = '';
+    copyTmpl += '<div class="code-widget">';
+    copyTmpl += 'LANG';
+    copyTmpl += '</div>';
+    jQuery('.markdown-body pre').each(function() {
+      var $pre = jQuery(this);
+      if ($pre.find('code.mermaid').length > 0) {
+        return;
+      }
+      if ($pre.find('span.line').length > 0) {
+        return;
+      }
+
+      var lang = '';
+
+      if (enableLang) {
+        lang = CONFIG.code_language.default;
+        if ($pre[0].children.length > 0 && $pre[0].children[0].classList.length >= 2 && $pre.children().hasClass('hljs')) {
+          lang = $pre[0].children[0].classList[1];
+        } else if ($pre[0].getAttribute('data-language')) {
+          lang = $pre[0].getAttribute('data-language');
+        } else if ($pre.parent().hasClass('sourceCode') && $pre[0].children.length > 0 && $pre[0].children[0].classList.length >= 2) {
+          lang = $pre[0].children[0].classList[1];
+          $pre.parent().addClass('code-wrapper');
+        } else if ($pre.parent().hasClass('markdown-body') && $pre[0].classList.length === 0) {
+          $pre.wrap('<div class="code-wrapper"></div>');
+        }
+        lang = lang.toUpperCase().replace('NONE', CONFIG.code_language.default);
+      }
+      $pre.append(copyTmpl.replace('LANG', lang).replace('code-widget">',
+        getBgClass($pre[0]) + (enableCopy ? ' code-widget copy-btn" data-clipboard-snippet><i class="iconfont icon-copy"></i>' : ' code-widget">')));
+
+      if (enableCopy) {
+        Fluid.utils.createScript('https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js', function() {
+          var clipboard = new window.ClipboardJS('.copy-btn', {
+            target: function(trigger) {
+              var nodes = trigger.parentNode.childNodes;
+              for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].tagName === 'CODE') {
+                  return nodes[i];
+                }
+              }
+            }
+          });
+          clipboard.on('success', function(e) {
+            e.clearSelection();
+            e.trigger.innerHTML = e.trigger.innerHTML.replace('icon-copy', 'icon-success');
+            setTimeout(function() {
+              e.trigger.innerHTML = e.trigger.innerHTML.replace('icon-success', 'icon-copy');
+            }, 2000);
+          });
+        });
+      }
+    });
+  })();
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
